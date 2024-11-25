@@ -9,7 +9,7 @@ from PIL import Image
 app = Flask(__name__)
 
 # Load your trained model
-MODEL_PATH = 'C:/Users/KIRAN KUMAR/Glaucoma-Detection-using-CNN/split/saved_model/my_model4.h5'
+MODEL_PATH = 'C:/Users/rakshith/Glaucoma-Detection-using-CNN/split/saved_model/my_model4.h5'
 model = load_model(MODEL_PATH)
 
 # Define a function to preprocess the uploaded image for prediction
