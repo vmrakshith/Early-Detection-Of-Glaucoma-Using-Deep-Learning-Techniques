@@ -36,9 +36,9 @@ def create_dataset(image_dir, batch_size):
     return dataset, class_names  # Return class_names as well
 
 # Create the datasets
-train_dir = pathlib.Path(r'C:\Users\KIRAN KUMAR\Glaucoma-Detection-using-CNN\split\images\train')
-val_dir = pathlib.Path(r'C:\Users\KIRAN KUMAR\Glaucoma-Detection-using-CNN\split\images\val')
-test_dir = pathlib.Path(r'C:\Users\KIRAN KUMAR\Glaucoma-Detection-using-CNN\split\images\test')
+train_dir = pathlib.Path(r'C:\Users\rakshith\Glaucoma-Detection-using-CNN\split\images\train')
+val_dir = pathlib.Path(r'C:\Users\rakshith\Glaucoma-Detection-using-CNN\split\images\val')
+test_dir = pathlib.Path(r'C:\Users\rakshith\Glaucoma-Detection-using-CNN\split\images\test')
 
 train_ds, class_names = create_dataset(train_dir, batch_size)
 print("Class names:", class_names)
@@ -90,7 +90,7 @@ history = model.fit(
 )
 
 # Save the model
-model_save_path = 'C:/Users/KIRAN KUMAR/Glaucoma-Detection-using-CNN/split/saved_model/my_model4.h5'
+model_save_path = 'C:/Users/rakshith/Glaucoma-Detection-using-CNN/split/saved_model/my_model4.h5'
 model.save(model_save_path)
 
 # Evaluate the model on the test dataset
